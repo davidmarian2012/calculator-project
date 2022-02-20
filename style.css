@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(191, 195, 197);
+}
+
+h2{
+    font-weight: 500;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.blue-color{
+    color:rgb(73, 147, 182);
+}
+
+.red-color{
+    color:rgba(173, 77, 77, 0.897);
+}
+
+.calculator{
+    width: 350px;
+    height: 550px;
+    background-color: rgb(36, 34, 34);
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+              0 1px 2px rgba(0,0,0,0.15), 
+              0 3px 4px rgba(0,0,0,0.15), 
+              0 6px 8px rgba(0,0,0,0.15),
+              0 16px 16px rgba(0,0,0,0.15);
+}
+
+.resultscreen-container{
+    height: 32%;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultscreen{
+    height: 80%;
+    width: 90%;
+    border-radius: 15px;
+    background-color: rgb(226, 221, 221);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resultscreen h2{
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+.resultscreen h3{
+    margin-right: 20px;
+    font-size: 25px;
+    position: absolute;
+    margin-bottom:90px;
+    color: rgb(85, 84, 80);
+}
+
+.digits-container{
+    height: 68%;
+    padding: 0 10px 10px 10px;
+    border-radius: 0 0 15px 15px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+    background-color:  rgba(235, 146, 63, 0.897);
+    color: rgb(228, 219, 219);
+    cursor: pointer;
+    transition: 0.04s;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+              0 1px 2px rgba(0,0,0,0.15), 
+              0 3px 4px rgba(0,0,0,0.15), 
+              0 6px 8px rgba(0,0,0,0.15),
+              0 16px 16px rgba(0,0,0,0.15);
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear-container{
+    grid-column: 1/3;
+    justify-content: flex-start;
+}
+
+.clear-btn{
+    margin-left: 8.75px;
+    width: 90%;
+    background-color: rgb(88, 83, 79);
+}
+
+.remove-container{
+    grid-column: 3/5;
+    justify-content: flex-end;
+}
+
+.remove-btn{
+    margin-right: 8.75px;
+    width: 90%;
+    background-color: rgb(88, 83, 79);
+}
+
+.add-btn,.subtract-btn,.multiply-btn,.divide-btn{
+    background-color: rgb(67, 104, 110);
+}
+
+.equal-btn{
+    background-color: rgb(119, 145, 163);
+}
+
+.point-btn{
+    background-color: rgb(110, 92, 68);
+}
